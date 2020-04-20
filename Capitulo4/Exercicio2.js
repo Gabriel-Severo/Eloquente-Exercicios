@@ -8,7 +8,7 @@ function reverseArray(array){
 
 function reverseArrayInPlace(array){
     let final = array.length - 1
-    for (let i = 0; i < Math.ceil(array.length / 2); i++){
+    for (let i = 0; i < Math.floor(array.length / 2); i++){
         let aux = array[i]
         array[i] = array[final]
         array[final] = aux
